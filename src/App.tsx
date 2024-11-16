@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Games from "./components/Games";
+import Gifts from "./components/Gifts";
+import MemoryLane from "./components/MemoryLane";
+import Home from "./components/Home";
 
 function App() {
+  if (sessionStorage.getItem("gamesSolved") === null) {
+    sessionStorage.setItem("gamesSolved", "false,false,false,false,false");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+      <div className="App">
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/memory-lane" element={<MemoryLane />}></Route>
+          <Route path="/games" element={<Games />}></Route>
+          <Route path="/gifts" element={<Gifts />}></Route>
+        </Routes>
+      </div>
+    </>
   );
 }
 
