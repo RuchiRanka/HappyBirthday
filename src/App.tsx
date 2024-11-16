@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Games from "./components/Games";
 import Gifts from "./components/Gifts";
 import MemoryLane from "./components/MemoryLane";
@@ -11,13 +11,6 @@ function App() {
   if (sessionStorage.getItem("gamesSolved") === null) {
     sessionStorage.setItem("gamesSolved", "false,false,false,false,false");
   }
-  const shouldRedirect = true;
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (shouldRedirect) {
-      navigate("/home");
-    }
-  });
   return (
     <>
       <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -25,6 +18,7 @@ function App() {
         <Navbar></Navbar>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route
               path={process.env.REACT_APP_FOR_PATH + "/home"}
               element={<Home />}
@@ -41,6 +35,7 @@ function App() {
               path={process.env.REACT_APP_FOR_PATH + "/gifts"}
               element={<Gifts />}
             ></Route>
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </BrowserRouter>
       </div>
