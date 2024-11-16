@@ -19,23 +19,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
-            <Route
-              path={process.env.REACT_APP_FOR_PATH + "/home"}
-              element={<Home />}
-            ></Route>
-            <Route
-              path={process.env.REACT_APP_FOR_PATH + "/memory-lane"}
-              element={<MemoryLane />}
-            ></Route>
-            <Route
-              path={process.env.REACT_APP_FOR_PATH + "/games"}
-              element={<Games />}
-            ></Route>
-            <Route
-              path={process.env.REACT_APP_FOR_PATH + "/gifts"}
-              element={<Gifts />}
-            ></Route>
-            <Route path="*" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/memory-lane" element={<MemoryLane />}></Route>
+            <Route path="/games" element={<Games />}></Route>
+            <Route path="/gifts" element={<Gifts />}></Route>
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </BrowserRouter>
       </div>
