@@ -17,7 +17,10 @@ function App() {
       <div className="App">
         <Navbar></Navbar>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route
+            path={process.env.REACT_APP_FOR_PATH + "/home"}
+            element={<Home />}
+          ></Route>
           <Route path="/memory-lane" element={<MemoryLane />}></Route>
           <Route path="/games" element={<Games />}></Route>
           <Route path="/gifts" element={<Gifts />}></Route>
