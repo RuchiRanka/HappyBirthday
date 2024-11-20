@@ -20,8 +20,8 @@ function App() {
     <>
       <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
       <div className="App">
-        <Navbar></Navbar>
         <Router basename="/HappyBirthday">
+          <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />}></Route>
