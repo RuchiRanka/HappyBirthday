@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HappyBirthday/static/css/main.656d899f.css",
-    "main.js": "/HappyBirthday/static/js/main.42221d07.js",
+    "main.js": "/HappyBirthday/static/js/main.4fa0cddc.js",
     "static/js/453.a2f94ed1.chunk.js": "/HappyBirthday/static/js/453.a2f94ed1.chunk.js",
     "static/media/trailer-of-life.mp4": "/HappyBirthday/static/media/trailer-of-life.ed08f189a855d29369a0.mp4",
     "static/media/villa-img.jpg": "/HappyBirthday/static/media/villa-img.3eee2822be176717efa3.jpg",
@@ -36,11 +36,11 @@
     "static/media/dishant.png": "/HappyBirthday/static/media/dishant.760bde97d71112633d3c.png",
     "index.html": "/HappyBirthday/index.html",
     "main.656d899f.css.map": "/HappyBirthday/static/css/main.656d899f.css.map",
-    "main.42221d07.js.map": "/HappyBirthday/static/js/main.42221d07.js.map",
+    "main.4fa0cddc.js.map": "/HappyBirthday/static/js/main.4fa0cddc.js.map",
     "453.a2f94ed1.chunk.js.map": "/HappyBirthday/static/js/453.a2f94ed1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.656d899f.css",
-    "static/js/main.42221d07.js"
+    "static/js/main.4fa0cddc.js"
   ]
 }
