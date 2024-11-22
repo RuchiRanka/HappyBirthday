@@ -12,7 +12,7 @@ export default function GuessTheImg() {
   const answers = ["WELL", "FIREWORK,FIRECRACKER", "PIZZA,CHEESE"];
   const answerExplanations = [
     "Your dad were searching for you in the entire village to take you home from your Nani's, but you hid in the, well, WELL!",
-    "You, unintentionally, injured your brother when you were young, with a firework or firecracker(depends on what you call 'em!)",
+    "You, unintentionally, injured your brother when you were young, with a firework or firecracker (depends on what you call 'em!)",
     "Once upon a time, you went for a treat, A hot cheesy pizza, oh what a feat! But the cheese was too hot, a molten surprise, So you took it off quick, bread only, no lies!",
   ];
   const imgData = [Well, Firecracker, Pizza];

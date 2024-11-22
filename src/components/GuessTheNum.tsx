@@ -22,10 +22,10 @@ export default function GuessTheNum() {
       // localStorage.setItem("gamesSolved", gamesSolved!.join(","));
       newGame();
     } else if (Number(guessedNum) < generatedNum) {
-      setGuessStatus("The guessed number is smaller than the original number!");
+      setGuessStatus("Guess a greater number!");
       // console.log(guessedNum + " " + generatedNum + "Warmer");
     } else {
-      setGuessStatus("The guessed number is greater than the original number!");
+      setGuessStatus("Guess a smaller number!");
       // console.log(guessedNum + " " + generatedNum + "Colder");
     }
   }
