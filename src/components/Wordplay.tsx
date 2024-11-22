@@ -153,10 +153,10 @@ export default function Wordplay() {
         <p>2. Friends? ____! Complete the sentence.</p>
         <h4>RIGHT</h4>
         <p>1. Birthday Boy's Name</p>
-        <p>2. How many brothers you got?</p>
-        <p>3. Who was your first ever pet?</p>
+        <p>2. How many children do your parents have?</p>
+        <p>3. What was your first ever pet?</p>
         <h4>ACROSS</h4>
-        <p>1. Favourite color</p>
+        <p>1. Your favourite color!</p>
       </div>
     </div>
   );
