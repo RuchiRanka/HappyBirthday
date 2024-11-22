@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/HappyBirthday/static/css/main.656d899f.css",
-    "main.js": "/HappyBirthday/static/js/main.4fa0cddc.js",
+    "main.css": "/HappyBirthday/static/css/main.0e1c4bcd.css",
+    "main.js": "/HappyBirthday/static/js/main.75ae5bdf.js",
     "static/js/453.a2f94ed1.chunk.js": "/HappyBirthday/static/js/453.a2f94ed1.chunk.js",
-    "static/media/trailer-of-life.mp4": "/HappyBirthday/static/media/trailer-of-life.ed08f189a855d29369a0.mp4",
+    "static/media/trailer-of-life.mp4": "/HappyBirthday/static/media/trailer-of-life.97309c546874154582e0.mp4",
     "static/media/villa-img.jpg": "/HappyBirthday/static/media/villa-img.3eee2822be176717efa3.jpg",
     "static/media/graduation-collage.png": "/HappyBirthday/static/media/graduation-collage.ef1b1e80517ea4b804d6.png",
     "static/media/fun-things-collage.png": "/HappyBirthday/static/media/fun-things-collage.7af1b582039bd93599fe.png",
+    "static/media/surprise-img.png": "/HappyBirthday/static/media/surprise-img.921065efc816cc079a96.png",
     "static/media/pizza.gif": "/HappyBirthday/static/media/pizza.29c306d26adef5c97691.gif",
     "static/media/night-img.jpg": "/HappyBirthday/static/media/night-img.424ae7d0eff816c74f8e.jpg",
-    "static/media/surprise-img.png": "/HappyBirthday/static/media/surprise-img.76887473ba7c1f66d824.png",
     "static/media/snow-img.png": "/HappyBirthday/static/media/snow-img.dbbc55c0378757ddb70d.png",
     "static/media/dog-img.jpg": "/HappyBirthday/static/media/dog-img.674dc848100bbe159ed0.jpg",
     "static/media/well.gif": "/HappyBirthday/static/media/well.778d3235eb62b58439be.gif",
     "static/media/firecracker.gif": "/HappyBirthday/static/media/firecracker.8a48441ba918190ab30d.gif",
     "static/media/treasure-hunt.png": "/HappyBirthday/static/media/treasure-hunt.3f586b5e0f869618ebe8.png",
     "static/media/RPSTitleImg.png": "/HappyBirthday/static/media/RPSTitleImg.6aa98bbfb98cd8bada62.png",
-    "static/media/ruchi.png": "/HappyBirthday/static/media/ruchi.cab312cea447b5626112.png",
     "static/media/cinema-img.jpg": "/HappyBirthday/static/media/cinema-img.4d61e54bd90a76a5f4d9.jpg",
+    "static/media/ruchi.png": "/HappyBirthday/static/media/ruchi.bae5d4afc31483de2b4f.png",
     "static/media/wow-sound.mp3": "/HappyBirthday/static/media/wow-sound.bf903dfedd4bd62fc39f.mp3",
     "static/media/star.png": "/HappyBirthday/static/media/star.facc5900882c405c5c7a.png",
     "static/media/cinema.png": "/HappyBirthday/static/media/cinema.3decf40f32315512deb4.png",
@@ -35,12 +35,12 @@
     "static/media/rock.png": "/HappyBirthday/static/media/rock.85dbaa8455c25e7bcc50.png",
     "static/media/dishant.png": "/HappyBirthday/static/media/dishant.760bde97d71112633d3c.png",
     "index.html": "/HappyBirthday/index.html",
-    "main.656d899f.css.map": "/HappyBirthday/static/css/main.656d899f.css.map",
-    "main.4fa0cddc.js.map": "/HappyBirthday/static/js/main.4fa0cddc.js.map",
+    "main.0e1c4bcd.css.map": "/HappyBirthday/static/css/main.0e1c4bcd.css.map",
+    "main.75ae5bdf.js.map": "/HappyBirthday/static/js/main.75ae5bdf.js.map",
     "453.a2f94ed1.chunk.js.map": "/HappyBirthday/static/js/453.a2f94ed1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.656d899f.css",
-    "static/js/main.4fa0cddc.js"
+    "static/css/main.0e1c4bcd.css",
+    "static/js/main.75ae5bdf.js"
   ]
 }
