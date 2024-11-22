@@ -189,7 +189,7 @@ export default function MemoryLane() {
         <div className="photo-desc-memory">
           <div className="desc-memory">
             As I remember it, the 'Trampoline Park' was one of the first
-            impulsive & spontaneous fun decision that we ever took! It was so
+            impulsive & spontaneous "fun decision" that we ever took! It was so
             fun and I honestly have it engraved on my brain permanently. Let's
             never stop having fun like this, let's live the most enthusiastic, a
             little spontaneous & impulsive life, with every possible good risk!
