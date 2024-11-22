@@ -96,11 +96,11 @@ input:focus {
 }
 
 .wordplay-details h4 {
-  color: #fae083;
+  color: #ff2171;
 }
 
 .wordplay-details p {
-  color: #ffffff;
+  color: #3d1f47;
   font-size: 18px;
 }
 
@@ -221,6 +221,9 @@ input:focus {
 
 /* Gifts */
 .gifts {
+}
+
+.gift-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -382,6 +385,7 @@ input:focus {
 
 .surprise-popup {
   position: absolute;
+  right: 5px;
 }
 
 .icon-secret {
@@ -409,7 +413,15 @@ input:focus {
   border-radius: 10px;
 }
 
+.trailer-video video {
+  height: 500px;
+  margin: 20px;
+}
+
 .photos-memories-container {
+  background: linear-gradient(30deg, #fbf0b2, #ffc7ea, #d8b4f8, #caedff);
+  margin: 30px;
+  border-radius: 10px;
 }
 
 .photo-desc-memory {
@@ -425,6 +437,14 @@ input:focus {
 }
 
 .icon-secret-div-1 {
+  margin-left: 12px;
+}
+
+.icon-secret-div-3,
+.icon-secret-div-4,
+.icon-secret-div-5 {
+  display: flex;
+  justify-content: center;
 }
 
 /* Home */
@@ -439,6 +459,7 @@ input:focus {
   margin: auto 15%;
   background: linear-gradient(30deg, #fbf0b2, #ffc7ea, #d8b4f8, #caedff);
   padding: 40px;
+  font-family: "Playwrite DE Grund";
 }
 
 .home-desc-title {
@@ -503,4 +524,25 @@ input:focus {
   border: 0;
   padding: 12px;
   font-size: 20px;
+}
+
+/* All Tabs */
+
+.memory-lane,
+.games,
+.gifts {
+  font-family: "Playwrite DE Grund";
+}
+
+.tab-page-desc {
+  padding: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Playwrite DE Grund";
+  background: linear-gradient(to left, #f6f7c4, #a1eebd, #d8b4f8, #7bd3ea);
+  margin: 30px;
+  border-radius: 10px;
+  color: #3d1f47;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }

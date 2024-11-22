@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 
 export default function Countdown() {
   const currentTime = new Date().getTime();
-  const bdayTime = new Date(2024, 10, 14, 18, 29).getTime();
+  const bdayTime = new Date(2025, 10, 14).getTime();
   const [timeLeft, setTimeLeft] = useState(
     Math.floor((bdayTime - currentTime) / 1000)
   );
@@ -55,7 +55,7 @@ export default function Countdown() {
         <div>
           Happy Birthday Ritik!!!
           <br />
-          Hope you have the best time ever!
+          Cheers to your happy life ahead!
         </div>
       </div>
     </div>

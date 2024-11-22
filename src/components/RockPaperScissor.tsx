@@ -27,8 +27,8 @@ export default function RockPaperScissor() {
       (guessedItem === 2 && generatedItem === 1)
     ) {
       setGuessStatus("You won!");
-      console.log(guessedItem + " " + generatedItem + "is matched.");
-      console.log("Game solved!");
+      // console.log(guessedItem + " " + generatedItem + "is matched.");
+      // console.log("Game solved!");
       let gamesSolved = sessionStorage.getItem("gamesSolved")?.split(",");
       // let gamesSolved = localStorage.getItem("gamesSolved")?.split(",");
       gamesSolved![4] = "true";
@@ -39,10 +39,10 @@ export default function RockPaperScissor() {
       (guessedItem === 1 && generatedItem === 1) ||
       (guessedItem === 2 && generatedItem === 2)
     ) {
-      console.log(guessedItem + " " + generatedItem + "is tied.");
+      // console.log(guessedItem + " " + generatedItem + "is tied.");
       setGuessStatus("You're tied!");
     } else {
-      console.log(guessedItem + " " + generatedItem + "is not matched.");
+      // console.log(guessedItem + " " + generatedItem + "is not matched.");
       setGuessStatus("You lost!");
     }
     newGame();

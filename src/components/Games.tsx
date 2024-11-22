@@ -9,6 +9,10 @@ import RockPaperScissor from "./RockPaperScissor";
 export default function Games() {
   return (
     <div className="games">
+      <div className="tab-page-desc">
+        Play each game to unlock its respective gift from the 'Gifts' tab. Hope
+        you win 'em all!
+      </div>
       <div className="game-div">
         <Wordplay />
       </div>
@@ -25,7 +29,6 @@ export default function Games() {
         <RockPaperScissor />
       </div>
       {/* <QuizMCQ /> */}
-      {/* <MemoryGame /> */}
     </div>
   );
 }

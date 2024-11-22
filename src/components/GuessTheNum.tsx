@@ -13,8 +13,8 @@ export default function GuessTheNum() {
   function onClickMatchGuess() {
     if (Number(guessedNum) === generatedNum) {
       setGuessStatus("Matched. You've entered new game!");
-      console.log(guessedNum + " " + generatedNum + "number is matched");
-      console.log("Game solved!");
+      // console.log(guessedNum + " " + generatedNum + "number is matched");
+      // console.log("Game solved!");
       let gamesSolved = sessionStorage.getItem("gamesSolved")?.split(",");
       // let gamesSolved = localStorage.getItem("gamesSolved")?.split(",");
       gamesSolved![3] = "true";
@@ -22,17 +22,17 @@ export default function GuessTheNum() {
       // localStorage.setItem("gamesSolved", gamesSolved!.join(","));
       newGame();
     } else if (Number(guessedNum) < generatedNum) {
-      setGuessStatus("Warmer");
-      console.log(guessedNum + " " + generatedNum + "Warmer");
+      setGuessStatus("The guessed number is smaller than the original number!");
+      // console.log(guessedNum + " " + generatedNum + "Warmer");
     } else {
-      setGuessStatus("Colder");
-      console.log(guessedNum + " " + generatedNum + "Colder");
+      setGuessStatus("The guessed number is greater than the original number!");
+      // console.log(guessedNum + " " + generatedNum + "Colder");
     }
   }
 
   function newGame() {
     setGuessedNum(0);
-    setGeneratedNum(Math.floor(Math.random() * 11));
+    setGeneratedNum(Math.floor(Math.random() * 101));
   }
 
   function handleChange(e: any) {
@@ -43,10 +43,10 @@ export default function GuessTheNum() {
   return (
     <div>
       <div>Guess the Number</div>
-      <p>Between 0 to 10</p>
+      <p>Between 0 to 100</p>
       <input type="number" value={guessedNum} onChange={handleChange} />
 
-      <button onClick={onClickMatchGuess}>Click</button>
+      <button onClick={onClickMatchGuess}>Submit Guess</button>
       <div>{guessStatus}</div>
     </div>
   );

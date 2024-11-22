@@ -38,7 +38,7 @@ export default function MemoryGame() {
     }
 
     if (won !== 0 && won === cardsArray.length / 2) {
-      console.log("Game solved!");
+      // console.log("Game solved!");
       let gamesSolved = sessionStorage.getItem("gamesSolved")?.split(",");
       gamesSolved![2] = "true";
       sessionStorage.setItem("gamesSolved", gamesSolved!.join(","));

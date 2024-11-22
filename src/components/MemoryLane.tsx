@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Img1 from "../images/1.png";
 import Cinema from "../images/cinema.png";
 import Dog from "../images/dog.png";
-import Glare from "../images/glare.png";
-import Shine from "../images/shine.png";
 import Snowy from "../images/snowy.png";
 import Star from "../images/star.png";
 import Surprise from "../images/surprise.png";
 import Villa from "../images/villa.png";
 import ImageEnlarge from "./ImageEnlarge";
-import PinkCheckered from "../images/pink-checkered.jpg";
 import WowSound from "../sounds/wow-sound.mp3";
 import SurpriseNoobSound from "../sounds/surprise-noob-sound.mp3";
 import SurpriseImg from "../images/surprise-img.png";
@@ -77,11 +73,14 @@ export default function MemoryLane() {
 
   return (
     <div className="memory-lane">
-      <div>
+      <div className="tab-page-desc">
         Welcome to Memory Lane Island! 🌴✨ Here, amidst memories galore, you’ll
         find exciting surprises. 🎉 Watch out for surprise pop-ups, and keep
         your wits in place. Ready to go down Memory Lane and take on this
         rollercoaster full of memories? Let the adventure begin! 🎢
+        <br />
+        Click on wiggly items to get a trip down memory lane & don't forget to
+        enjoy the ride, you'll love it here!
       </div>
 
       {/* Surprise Popup */}
@@ -132,13 +131,13 @@ export default function MemoryLane() {
           />
         </div>
         <p>
-          Trailer of Ritik's life! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Placeat incidunt culpa aperiam quas omnis mollitia?
-          Voluptate, dolore recusandae ullam asperiores beatae, quam officia rem
-          esse repellendus non dignissimos aut! Sit?
+          Here's a trailer of your life! Your awesome personality & your unique
+          friends have contributed here to take you to this mystical land &
+          power your soul with energy. Go ahead, power up by watching this & run
+          headfast through these doors!
         </p>
         <div className="trailer-video">
-          <video height="500" controls>
+          <video controls>
             <source src={TrailerOfLife} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
@@ -167,10 +166,14 @@ export default function MemoryLane() {
             displayImgIconClass="photo-memory"
           />
           <div className="desc-memory">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            officia possimus, incidunt quam eum vitae, sunt est exercitationem
-            tempora provident debitis, enim a soluta qui accusamus deleniti?
-            Rerum, modi quidem.
+            Remember 'Graduation Day', we had so much fun, didn't we? We were so
+            thrilled that we navigated our way through every obstacle, every
+            hurdle, and finally, became graduates. "WE'RE ENGINEERS!!", these
+            words were echoing so much that day! Can you even believe it?
+            Seriously, this has been such a thrill!
+            <br />I am so glad I found you, you were the most important, the
+            most pivotal part of this journey. Thank you, thank you so much,
+            truly, for being there!
           </div>
         </div>
         <div className="icon-secret-div-4">
@@ -185,10 +188,11 @@ export default function MemoryLane() {
         </div>
         <div className="photo-desc-memory">
           <div className="desc-memory">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            officia possimus, incidunt quam eum vitae, sunt est exercitationem
-            tempora provident debitis, enim a soluta qui accusamus deleniti?
-            Rerum, modi quidem.
+            As I remember it, the 'Trampoline Park' was one of the first
+            impulsive & spontaneous fun decision that we ever took! It was so
+            fun and I honestly have it engraved on my brain permanently. Let's
+            never stop having fun like this, let's live the most enthusiastic, a
+            little spontaneous & impulsive life, with every possible good risk!
           </div>
           <ImageEnlarge
             revealImg={() => revealImg(7)}

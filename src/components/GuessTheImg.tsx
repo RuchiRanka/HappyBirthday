@@ -32,7 +32,7 @@ export default function GuessTheImg() {
     setHintClicked((prev) =>
       prev.map((clicked, i) => (i === idx ? true : clicked))
     );
-    console.log(hintClicked);
+    // console.log(hintClicked);
   }
 
   function submitAnswer(idx: number): any {
@@ -50,15 +50,15 @@ export default function GuessTheImg() {
     e.preventDefault();
     setAnsEntered((prevValue) => {
       prevValue[idx] = e.target.value.toUpperCase();
-      console.log(prevValue);
+      // console.log(prevValue);
       return prevValue;
     });
   }
 
   useEffect(() => {
-    console.log(matchedStatus);
+    // console.log(matchedStatus);
     if (!matchedStatus.includes(false)) {
-      console.log("Game solved!");
+      // console.log("Game solved!");
       let gamesSolved = sessionStorage.getItem("gamesSolved")?.split(",");
       // let gamesSolved = localStorage.getItem("gamesSolved")?.split(",");
       gamesSolved![1] = "true";
@@ -76,60 +76,16 @@ export default function GuessTheImg() {
       <div className="guess-img-container">
         {answerExplanations.map((elem, idx) => (
           <div className="guess-img">
-            {/* <div> */}
             <img src={imgData[idx]} alt={"img" + idx} />
             <button onClick={(e) => clickHint(e, idx)}>Hint</button>
-            {/* </div>
-            <div> */}
+
             <p>{hintClicked[idx] ? hints[idx] : ""}</p>
             <input type="text" onChange={(e) => handleChange(e, idx)} />
             <button onClick={() => submitAnswer(idx)}>Submit Answer</button>
             <p>{matchedStatus[idx] ? "Matched" : "Not Matched"}</p>
             <p>{ansClicked[idx] ? elem : ""}</p>
-            {/* </div> */}
           </div>
         ))}
-        {/* <div>
-          <img src="" alt="img1" />
-          <button onClick={clickHint(1)}>Hint</button>
-          <p>{hintClicked[1] ? hints[1] : ""}</p>
-          <input
-            type="text"
-            value={ansEntered}
-            onChange={(e) => handleChange(e, 1)}
-          />
-          <button onClick={submitAnswer(1)}>Submit Answer</button>
-          <p></p>
-          <p>{ansClicked[1] ? answerExplanations[1] : ""}</p>
-        </div>
-
-        <div>
-          <img src="" alt="img2" />
-          <button onClick={clickHint(2)}>Hint</button>
-          <p>{hintClicked[2] ? hints[2] : ""}</p>
-          <input
-            type="text"
-            value={ansEntered}
-            onChange={(e) => handleChange(e, 2)}
-          />
-          <button onClick={submitAnswer(2)}>Submit Answer</button>
-          <p></p>
-          <p>{ansClicked[2] ? answerExplanations[2] : ""}</p>
-        </div>
-
-        <div>
-          <img src="" alt="img3" />
-          <button onClick={clickHint(3)}>Hint</button>
-          <p>{hintClicked[3] ? hints[3] : ""}</p>
-          <input
-            type="text"
-            value={ansEntered}
-            onChange={(e) => handleChange(e, 3)}
-          />
-          <button onClick={submitAnswer(3)}>Submit Answer</button>
-          <p></p>
-          <p>{ansClicked[3] ? answerExplanations[3] : ""}</p>
-        </div> */}
       </div>
     </div>
   );

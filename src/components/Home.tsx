@@ -10,7 +10,7 @@ export default function Home() {
   function revealImg() {
     setMapOpen(true);
     new Audio(TreasureCoinsSound).play();
-    console.log(mapOpen);
+    // console.log(mapOpen);
   }
 
   function closePopup() {
@@ -19,17 +19,15 @@ export default function Home() {
   return (
     <div>
       <Countdown></Countdown>
-      {/* <div className="home-desc-div"> */}
       <div className="home-desc-div">
         <p className="home-desc-title">
           Many Many Happy Returns of the Day, Ritik!
         </p>
         <p className="home-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          omnis dolorum fuga reprehenderit sapiente ad consectetur nemo cumque
-          quasi aspernatur deleniti, minus quibusdam voluptas aliquam possimus
-          magni eveniet eius placeat. Click on the map below to start your
-          quest!
+          Navigate your way through these dreamy tabs to find surprises and
+          unveil your gifts. Don't forget to have fun and come back to check out
+          where your gifts are hidden! Click on the map below when you're ready
+          to start your quest!
         </p>
         <div className="icon-secret-div-1">
           <ImageEnlarge
@@ -42,7 +40,6 @@ export default function Home() {
           />
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }

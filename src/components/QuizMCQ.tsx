@@ -26,7 +26,7 @@ export default function QuizMCQ() {
     // console.log(formData[]);
     for (let i = 0; i < answers.length; i++) {
       if (answers[i] !== formData[i]) {
-        console.log("You got some questions wrong!");
+        // console.log("You got some questions wrong!");
       }
     }
   }

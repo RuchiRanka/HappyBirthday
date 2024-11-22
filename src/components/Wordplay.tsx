@@ -12,10 +12,10 @@ export default function Wordplay() {
         inputElemsNotDisabled.push(inputElems[i]);
       }
     }
-    console.log(inputElemsNotDisabled);
+    // console.log(inputElemsNotDisabled);
     if (inputElemsNotDisabled.length > 0) {
       for (let i = 0; i < inputElemsNotDisabled.length; i++) {
-        console.log(answerString[i] + " " + inputElemsNotDisabled[i].value);
+        // console.log(answerString[i] + " " + inputElemsNotDisabled[i].value);
         if (answerString[i] === inputElemsNotDisabled[i].value) {
           inputElemsNotDisabled[i].disabled = true;
           answerString.splice(i, 1);
@@ -24,9 +24,9 @@ export default function Wordplay() {
         }
       }
     }
-    console.log(gameSolved);
+    // console.log(gameSolved);
     if (gameSolved) {
-      console.log("Game solved!");
+      // console.log("Game solved!");
       let gamesSolved = sessionStorage.getItem("gamesSolved")?.split(",");
       // let gamesSolved = localStorage.getItem("gamesSolved")?.split(",");
       gamesSolved![0] = "true";
